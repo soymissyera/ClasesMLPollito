@@ -1,0 +1,8 @@
+flowchart LR
+  T[Cada fila<br>del dataset] --> X[X · lo que el modelo observa<br>las características]
+  T --> Y[y · la respuesta que<br>debe aprender]
+  X --> M[Modelo 🐥] 
+  Y --> M
+  M --> P[Predicción para<br>casos nuevos]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class P destacado

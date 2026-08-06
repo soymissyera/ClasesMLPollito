@@ -1,0 +1,9 @@
+flowchart LR
+  A{¿Qué dijo<br>el modelo?} -- caerá en mora --> B{¿Y la verdad?}
+  A -- pagará puntual --> C{¿Y la verdad?}
+  B -- cayó en mora --> VP[Atrapado a tiempo ✔️<br>verdadero positivo]
+  B -- pagó puntual --> FP[Buen cliente rechazado 😬<br>falso positivo]
+  C -- pagó puntual --> VN[Bien evaluado ✔️<br>verdadero negativo]
+  C -- cayó en mora --> FN[Préstamo perdido 🚨<br>falso negativo]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class FN destacado

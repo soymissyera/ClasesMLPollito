@@ -1,0 +1,9 @@
+flowchart LR
+  A{¿Qué dijo<br>el modelo?} -- se fuga --> B{¿Y la verdad?}
+  A -- se queda --> C{¿Y la verdad?}
+  B -- se fugó --> VP[Atrapado ✔️<br>verdadero positivo]
+  B -- se quedó --> FP[Falsa alarma 😬<br>falso positivo]
+  C -- se quedó --> VN[Bien librado ✔️<br>verdadero negativo]
+  C -- se fugó --> FN[Se escapó 🚨<br>falso negativo]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class FN destacado

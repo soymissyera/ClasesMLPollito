@@ -1,0 +1,16 @@
+flowchart TB
+  subgraph f1[Programación clásica]
+    direction LR
+    R1[Reglas] --> C1[Computadora]
+    D1[Datos] --> C1
+    C1 --> S1[Respuestas]
+  end
+  subgraph f2[Machine Learning]
+    direction LR
+    D2[Datos] --> C2[Computadora]
+    S2[Respuestas] --> C2
+    C2 --> R2[Reglas aprendidas]
+  end
+  f1 ~~~ f2
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class R2 destacado

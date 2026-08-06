@@ -1,0 +1,12 @@
+flowchart TB
+  subgraph f1[Modelo sano 🐥]
+    direction LR
+    A1[Aprende el<br>patrón general] --> B1[Aprueba el<br>examen sorpresa]
+  end
+  subgraph f2[Modelo memorión 😵]
+    direction LR
+    A2[Memoriza cada fila<br>del train] --> B2[Se congela<br>en el test]
+  end
+  f1 ~~~ f2
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class B2 destacado

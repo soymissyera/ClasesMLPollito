@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[1 · Crear el modelo] --> B[2 · Entrenar<br>fit con el train]
+  end
+  subgraph f2[ ]
+    direction LR
+    C[3 · Predecir<br>predict con el test] --> E[4 · Evaluar contra<br>la verdad 🎯]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class E destacado

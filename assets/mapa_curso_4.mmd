@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    C1[Clase 1<br>Introducción<br>al ML] --> C2[Clase 2<br>Supervisado y<br>no supervisado] --> C3[Clase 3<br>Preparación<br>y features] --> C4[Clase 4<br>Regresión]
+  end
+  subgraph f2[ ]
+    direction LR
+    C5[Clase 5<br>Clasificación] --> C6[Clase 6<br>Evaluación y<br>validación] --> C7[Clase 7<br>Proyecto<br>final]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class C4 destacado

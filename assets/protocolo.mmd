@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Train] --> B[Validación cruzada<br>para comparar modelos] --> C[GridSearchCV<br>mejor configuración]
+  end
+  subgraph f2[ ]
+    direction LR
+    D[Test UNA sola vez<br>el examen final 🔒] --> E[Boletín completo<br>y decisión]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class D destacado

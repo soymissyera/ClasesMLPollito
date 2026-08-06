@@ -1,0 +1,8 @@
+flowchart LR
+  A[Mismos datos<br>de train] --> M1[Modelo<br>lineal]
+  A --> M2[Bosque<br>aleatorio]
+  M1 --> E[Mismo examen<br>de test]
+  M2 --> E
+  E --> G[Gana el del<br>menor error<br>🏆]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class G destacado

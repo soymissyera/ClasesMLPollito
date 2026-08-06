@@ -1,0 +1,11 @@
+flowchart TD
+  A{¿La fila está<br>duplicada?} -- sí --> B[Fuera, es la<br>misma solicitud]
+  A -- no --> C{¿Texto<br>inconsistente?}
+  C -- sí --> D[Se unifica<br>COMAS y comas son uno]
+  C -- no --> E{¿Valor<br>imposible?}
+  E -- sí --> F[Fuera, nadie tiene<br>edad 220]
+  E -- no --> G{¿Celda<br>vacía?}
+  G -- sí --> H[Se decide con criterio<br>botar o imputar]
+  G -- no --> I[La fila queda ✨]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class I destacado

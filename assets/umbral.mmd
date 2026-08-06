@@ -1,0 +1,7 @@
+flowchart LR
+  A[Modelo entrega<br>probabilidad 0 a 1] --> B{¿Supera<br>el umbral?}
+  B -- sí --> C[Alerta de fuga 🚨]
+  B -- no --> D[Cliente tranquilo]
+  B --> E[La perilla la mueve<br>el negocio, no el modelo]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class E destacado

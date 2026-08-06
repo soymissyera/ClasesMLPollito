@@ -1,0 +1,12 @@
+flowchart TB
+  subgraph f1[El orden correcto ✅]
+    direction LR
+    A1[Partir<br>train y test] --> B1[Escalar SOLO<br>con train] --> C1[Aplicar<br>al test]
+  end
+  subgraph f2[La trampa 🚨]
+    direction LR
+    A2[Escalar con<br>TODO el dataset] --> B2[El test se filtró<br>al entrenamiento]
+  end
+  f1 ~~~ f2
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class B2 destacado

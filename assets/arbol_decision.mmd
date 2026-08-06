@@ -1,0 +1,9 @@
+flowchart TD
+  A{¿Tienes la respuesta<br>correcta en tus datos?} -- sí --> S[Supervisado]
+  A -- no --> N[No supervisado]
+  S --> B{¿Qué quieres<br>predecir?}
+  B -- una categoría --> C[Clasificación 🐥]
+  B -- un número --> R[Regresión]
+  N --> K[Clustering<br>descubre grupos]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class C,R destacado

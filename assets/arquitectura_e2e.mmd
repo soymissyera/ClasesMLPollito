@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Data contract<br>y gobernanza] --> B[Auditoría] --> C[EDA<br>interrogatorio] --> D[Features y<br>partición]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[Baseline y<br>torneo] --> F[Evaluación<br>honesta en test] --> G[Umbral por<br>costos y SHAP] --> H[Decisión de<br>negocio 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class H destacado
