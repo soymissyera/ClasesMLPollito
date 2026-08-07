@@ -1,0 +1,7 @@
+flowchart TD
+  A{¿Las curvas de train y<br>validación se juntan arriba?} -- sí --> B[Modelo sano 🐥]
+  A -- no --> C{¿Brecha grande<br>entre ambas?}
+  C -- sí --> E[Overfitting, simplifica<br>o consigue más datos]
+  C -- ambas bajas --> F[Falta modelo<br>o falta señal]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class B destacado

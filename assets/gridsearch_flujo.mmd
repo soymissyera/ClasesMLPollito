@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Define las perillas<br>y sus valores] --> B[Prueba cada<br>combinación] --> C[5 exámenes CV<br>por combinación]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[Promedia las<br>notas] --> F[Elige la mejor<br>configuración 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

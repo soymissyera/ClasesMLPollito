@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Predicciones<br>por zona] --> B[Comparar tasas<br>de alerta entre zonas]
+  end
+  subgraph f2[ ]
+    direction LR
+    C[¿Una zona castigada<br>sistemáticamente?] --> E[Ajustar ANTES<br>de lanzar 🚨]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class E destacado

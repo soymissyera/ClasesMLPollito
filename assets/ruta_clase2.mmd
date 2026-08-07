@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[El mapa<br>de decisión] --> B[Clasificación y<br>regresión en acción] --> C[KMeans descubre<br>segmentos]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[La trampa clásica<br>¿sup o no sup?] --> G[Tu reto<br>🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class G destacado

@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Modelo tonto<br>predice siempre la<br>clase mayoritaria] --> B[Marca la vara<br>mínima del torneo]
+  end
+  subgraph f2[ ]
+    direction LR
+    C[Todo modelo real debe<br>superarla con claridad 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class C destacado

@@ -1,0 +1,7 @@
+flowchart TD
+  A{¿Cuántos nulos<br>tiene la columna?} -- pocos --> B[Imputa con criterio<br>y documenta]
+  A -- muchos --> C{¿La columna<br>aporta señal?}
+  C -- no --> E[Fuera la columna<br>con su porqué]
+  C -- sí --> F[Imputa y deja<br>marca de imputado ✨]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

@@ -1,0 +1,8 @@
+flowchart TD
+  A[Bodega Rosita<br>ingreso 5500 · deuda 1200] --> B{Pregunta 1 del árbol<br>¿la deuda es muy alta?}
+  B -- no --> C{Pregunta 2<br>¿el ingreso alcanza?}
+  B -- sí --> X[Sigue a la<br>rama de riesgo 🚨]
+  C -- sí --> D[Veredicto<br>APROBADO ✅]
+  C -- no --> Y[Sigue a la rama<br>de revisión]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class D destacado

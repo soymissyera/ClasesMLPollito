@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Overfitting<br>en vivo] --> B[La cura] --> C[Validación<br>cruzada] --> E[GridSearchCV]
+  end
+  subgraph f2[ ]
+    direction LR
+    F[El examen<br>final 🔒] --> G[La curva de<br>aprendizaje] --> H[El protocolo] --> I[Tu reto<br>🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class I destacado

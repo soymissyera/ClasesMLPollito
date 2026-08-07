@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Planta 3 centros<br>al azar] --> B[Asigna cada cliente<br>al centro más cercano] --> C[Mueve cada centro<br>al medio de su grupo]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[¿Algo cambió?<br>repite el juego] --> F[Grupos<br>estables 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

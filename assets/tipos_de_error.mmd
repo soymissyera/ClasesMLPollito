@@ -1,0 +1,12 @@
+flowchart TB
+  subgraph f1[Error tipo 1 😬]
+    direction LR
+    A[Aprueba a alguien<br>que NO iba a pagar] --> B[PolliCreditos pierde<br>el préstamo completo]
+  end
+  subgraph f2[Error tipo 2 💔]
+    direction LR
+    C[Rechaza a alguien<br>que SÍ iba a pagar] --> E[El buen cliente se va<br>a la competencia]
+  end
+  f1 ~~~ f2
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class B,E destacado

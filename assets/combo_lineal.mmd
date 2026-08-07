@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[metros × su peso] --> B[+ trabajadores<br>× su peso] --> C[+ antigüedad<br>× su peso]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[+ el punto de<br>partida, intercepto] --> F[Línea de crédito<br>estimada 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

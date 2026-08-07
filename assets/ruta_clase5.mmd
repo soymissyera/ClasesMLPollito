@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Dos rivales<br>entrenan] --> B[La matriz<br>a mano] --> C[El boletín<br>completo]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[La perilla<br>del umbral] --> F[Variables que<br>delatan la mora] --> G[Tu reto<br>🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class G destacado

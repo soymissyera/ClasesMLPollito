@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Historia de<br>200 clientes] --> B[fit<br>el modelo estudia] --> C[Modelo con reglas<br>aprendidas 🧠]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[Cliente nuevo<br>que nunca vio] --> F[predict<br>dicta el veredicto ✅]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

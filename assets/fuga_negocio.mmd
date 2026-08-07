@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Cliente bueno<br>paga puntual] --> B[Recibe oferta de<br>la competencia] --> C[Cierra su línea<br>y se va]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[PolliCreditos pierde<br>los ingresos futuros] --> F[El modelo alerta<br>a tiempo 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

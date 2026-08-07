@@ -1,0 +1,6 @@
+flowchart LR
+  R[Reglas del analista<br>dos umbrales fijos] --> E[Mismos<br>200 casos]
+  M[Modelo entrenado<br>aprendió la relación] --> E
+  E --> C[Conteo de<br>veredictos correctos] --> G[¿Quién acierta<br>más? 🥊]
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class G destacado

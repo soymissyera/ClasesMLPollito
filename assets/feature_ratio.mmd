@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[ingreso mensual] --> C[Se combinan en una<br>columna nueva]
+  end
+  subgraph f2[ ]
+    direction LR
+    E[ratio deuda sobre ingreso] --> F[Más señal que las<br>dos sueltas ✨]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class F destacado

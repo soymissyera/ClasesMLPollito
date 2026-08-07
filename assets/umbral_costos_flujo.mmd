@@ -1,0 +1,14 @@
+flowchart TB
+  subgraph f1[ ]
+    direction LR
+    A[Matriz de costos<br>FN 3000 · FP 300] --> B[Calcula la pérdida<br>total en cada umbral]
+  end
+  subgraph f2[ ]
+    direction LR
+    C[Elige el umbral de<br>MENOR pérdida] --> E[La decisión es<br>del negocio 🏆]
+  end
+  f1 --> f2
+  style f1 fill:transparent,stroke:none
+  style f2 fill:transparent,stroke:none
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class E destacado

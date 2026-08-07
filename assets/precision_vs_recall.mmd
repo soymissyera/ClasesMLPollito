@@ -1,0 +1,12 @@
+flowchart TB
+  subgraph f1[Precisión, mira MIS alarmas]
+    direction LR
+    A[De todas las alarmas<br>que soné] --> B[¿Cuántas eran<br>mora de verdad?]
+  end
+  subgraph f2[Recall, mira LAS moras]
+    direction LR
+    C[De todas las moras<br>que ocurrieron] --> E[¿Cuántas atrapé<br>a tiempo?]
+  end
+  f1 ~~~ f2
+  classDef destacado fill:#FF1493,stroke:#FF1493,color:#FFFFFF
+  class B,E destacado
